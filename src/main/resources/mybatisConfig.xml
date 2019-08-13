@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 关于mybatis的配置 -->
+<configuration>
+    <!-- 扫描要加载的类 给他起个别名或者直接使用 -->
+    <!-- 这个文件的位置必须在configuration之后 environments之前 -->
+    <typeAliases>
+        <package name="com.neuedu.ssm_douban_movie.entity" />
+    </typeAliases>
+</configuration>
