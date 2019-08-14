@@ -14,10 +14,17 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 
-	@RequestMapping("/login")
+	@RequestMapping("/pages/login")
 	public  String login(HttpServletRequest req, User user){
-		String str = "";
+		String str = "/index.jsp";
 
+		User user1 = loginService.login(user);
+		if (user1==null){
+			str = "/login.jsp";
+			req.setAttribute("msg","用户名或密码不能为空");
+		}
+
+		return str;
 	}
 
 }

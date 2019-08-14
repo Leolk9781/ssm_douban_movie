@@ -104,7 +104,7 @@
         <li class="mui-table-view-cell mui-media mui-col-xs-6">
             <a href="#">
                 <img class="mui-media-object" src="http://placehold.it/400x300">
-                <div class="mui-media-body">文字说明1</div>
+                <div class="mui-media-body"><a href="">文字说明1</a></div>
             </a>
         </li>
         <li class="mui-table-view-cell mui-media mui-col-xs-6">
